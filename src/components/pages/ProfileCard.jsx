@@ -13,21 +13,21 @@ const ProfileCard = () => {
           <div className={`border-4 rounded-full ${isDarkMode ? 'border-blue-600' : 'border-black' } p-1`}>
             <img
               className="w-36 h-36 rounded-full"
-              src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+              src="/profile.jpeg"
               alt=""
             />
           </div>
           <div className="mt-5 text-center">
             <h1 className={`text-2xl ${isDarkMode ? 'text-zinc-300' : 'text-zinc-700'} font-bold`}>Pradum Kumar</h1>
             <p className={`${isDarkMode ? 'text-zinc-400' : 'text-zinc-600'} mt-2 mb-3`}>
-              ⚡Senior Software Engineer | Open Source Enthusiast | PHP | Node.js | React⚡
+              ⚡Android Developer | Open Source Enthusiast | Dart | React | MySQL⚡
             </p>
           </div>
           <div>
             <a 
-              href="/hello.pdf"
+              href="/cv.pdf" download
             >
-              <button className="py-2 px-3 rounded-sm border border-slate-400 text-slate-400 text-sm shadow-md shadow-slate-700">
+              <button className={`py-2 px-3 rounded-sm border ${isDarkMode ? 'border-blue-500':'border-slate-400'}  text-slate-400 text-sm shadow-md shadow-slate-700`}>
                 Download Resume
               </button>
             </a>

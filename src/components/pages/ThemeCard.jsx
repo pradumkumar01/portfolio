@@ -32,14 +32,14 @@ const ThemeCard = () => {
         <h1 className="font-semibold text-text text-lg">Theme</h1>
         <p className="text-text">{selectedTheme}</p>
       </div>
-      <div className={`relative w-full sm:w-auto no-border`}>
+      <div className={`relative sm:justify-evenly no-border flex items-center `}>
         <FaFilter className="absolute left-3 top-1/2 transform -translate-y-1/2" />
         <select
           id='select'
           onChange={handleThemeChange}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseDown}
-          className={`w-full sm:w-auto pl-10 pr-3 py-2 cursor-pointer rounded-md ${
+          className={` pl-10 pr-3 py-2 cursor-pointer rounded-md ${
             isDarkMode ? 'bg-gray-800' : 'bg-white text-black'
           }`}
         >

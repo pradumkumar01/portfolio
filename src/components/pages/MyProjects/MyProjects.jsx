@@ -3,7 +3,33 @@ import { ThemeContext } from "../../Theme/ThemeContext";
 import { getText, getThemeClassNames } from "../Themes";
 
 const MyProjects = () => {
-  const project = [1, 2];
+  const project = [
+    // {
+    //   "title": "Shop with Us",
+    //   "img": "src/assets/shop.png",
+    //   "des": "This project is a fully functional e-commerce platform designed to provide users with a seamless shopping experience. It allows users to browse products, view detailed descriptions, add items to the cart, and make secure payments. The platform is responsive, ensuring compatibility across devices"
+    // },
+    {
+      "title": "Hotstar Clone Layout",
+      "img": "src/assets/hotstar.png",
+      "des": "This project is a replica of the popular streaming platform Hotstar, designed to showcase skills in building modern web applications with seamless user experiences. The platform allows users to browse and stream movies, TV shows, and live events with features like search, categories, and user authentication."
+    },
+    {
+      "title": "Bank Management System",
+      "img": "src/assets/bms.png",
+      "des": "This project is a comprehensive Bank Management System developed in C. It includes features such as account creation, balance inquiry, deposit, withdrawal, and account management. The system ensures data integrity and security, providing a reliable solution for managing banking operations efficiently."
+    },
+    {
+      "title": "Dashboard",
+      "img": "src/assets/dashboard.png",
+      "des": "This project is a versatile dashboard application built using Flutter for both web and mobile platforms. It features a responsive design, real-time data visualization, and interactive components. The dashboard allows users to monitor key metrics, generate reports, and customize their view for better data analysis and decision-making."
+    },
+    {
+      "title": "Todo App",
+      "img": "src/assets/todo.png",
+      "des": "This project is a full-stack Todo application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to create, read, update, and delete tasks. The application features user authentication, real-time updates, and a responsive design, providing a seamless task management experience."
+    },
+  ];
 
   const {isDarkMode} = useContext(ThemeContext) 
 
@@ -23,18 +49,17 @@ const MyProjects = () => {
                 <a href="https://example.com/">
                 <div className="flex flex-col justify-center items-center">
                   <h1 className="text-zinc-600 font-semibold text-lg my-2">
-                    Project Name
+                    {item.title}
                   </h1>
                   <img
-                    className="w-24 h-24"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                    className="w-60 h-24"
+                    src={item.img}
                     alt=""
                   />
                 </div>
                 <div className="">
                   <p className="text-zinc-500 text-justify px-6 py-5 text-sm">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Velit
+                  {item.des}
                   </p>
                 </div>
                 </a>
