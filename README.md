@@ -1,6 +1,7 @@
 # Portfolio
 
 This is the portfolio of Pradum Kumar.
+- [Website](https://pradumkumar.netlify.app/)
 
 ## Projects
 
@@ -26,3 +27,5 @@ This is the portfolio of Pradum Kumar.
 
 - [Email](mailto:pradumkumar7929@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/pradum-kumar-160538247/)
+- [Github](https://github.com/pradumkumar01/)
+
