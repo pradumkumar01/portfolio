@@ -1,6 +1,6 @@
 import { FaCodeBranch, FaGithub } from "react-icons/fa";
 import { useContext, useState } from "react";
-import {  getText, getThemeClassNames } from "../Themes";
+import {  getComponent, getText, getThemeClassNames } from "../Themes";
 import { ThemeContext } from "../../Theme/ThemeContext";
 import { BiGitRepoForked } from "react-icons/bi";
 
@@ -76,7 +76,7 @@ const GitProjects = () => {
 
   return (
     <div className="">
-      <div className={` ${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300'} h-1/2 rounded-md py-5 shadow-lg shadow-black`}>
+      <div className={` ${getComponent(isDarkMode)} h-1/2 rounded-md py-5 shadow-lg shadow-black`}>
         <div className="p-5 flex justify-between">
           <h1 className={`${getText(isDarkMode)} text-lg font-semibold ml-10 `}>
            Github Projects
@@ -93,7 +93,7 @@ const GitProjects = () => {
             return (
               
 
-              <div key={index} className={`${getThemeClassNames(isDarkMode)} h-44 rounded-md shadow-md shadow-gray-700`}>
+              <div key={index} className={`${getThemeClassNames(isDarkMode)} h-44 rounded-md shadow-md shadow-gray-800`}>
                 <a href="https://github.com/pradumkumar01/" >
                 <div className={`${isDarkMode? 'text-zinc-300': 'text-zinc-500' } px-10 py-8`}>
                   <div className="flex">

@@ -1,9 +1,9 @@
 export const getThemeClassNames = (isDarkMode) => {
-  return ` ${isDarkMode ? 'bg-gray-800 text-zinc-400' : 'bg-white'} rounded-md`;
+  return ` ${isDarkMode ? 'bg-gray-700 text-zinc-400' : 'bg-white'} rounded-md`;
 };
 
 export const getComponent = (isDarkMode) => {
-  return ` ${isDarkMode ? 'bg-gray-700 text-zinc-400' : 'bg-white'} rounded-md`;
+  return ` ${isDarkMode ? 'bg-gray-800 text-zinc-400' : 'bg-white'} rounded-md`;
 };
 
 

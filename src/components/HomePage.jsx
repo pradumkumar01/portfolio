@@ -21,13 +21,13 @@ const HomePage = () => {
 
   return (
     <>
-      <div className={`${isDarkMode === true ? 'bg-gray-800 text-zinc-400' : 'bg-zinc-400'} 
+      <div className={`${isDarkMode === true ? 'bg-gray-800 text-zinc-400' : 'bg-zinc-400'}
         `}>
         <div className={`
         ${isDarkMode === true ? 'bg-gray-800 text-zinc-400' : 'bg-zinc-400'} 
         
           flex p-5`}>
-          <div className="w-full lg:flex gap-5 ml-5">
+          <div className="w-full lg:flex gap-5 ml-0">
             <div className="flex flex-col sm:w-full lg:w-1/3  mb-5">
               <ThemeCard />
               <ProfileCard />

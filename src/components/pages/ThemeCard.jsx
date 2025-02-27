@@ -24,23 +24,23 @@ const ThemeCard = () => {
   return (
     <div
       id='theme'
-      className={`w-full h-auto rounded-md flex flex-col sm:flex-row justify-between items-center p-5 shadow-lg shadow-black ${
-        isDarkMode === true ? 'bg-gray-700 text-zinc-400' : 'bg-white'
+      className={`w-full h-auto rounded-md grid grid-rows-1 grid-cols-2   p-5 shadow-lg shadow-black ${
+        isDarkMode === true ? 'bg-gray-800 text-zinc-400' : 'bg-white'
       }`}
     >
-      <div className="mb-4 sm:mb-0">
+      <div className="">
         <h1 className="font-semibold text-text text-lg">Theme</h1>
         <p className="text-text">{selectedTheme}</p>
       </div>
-      <div className={`relative sm:justify-evenly no-border flex items-center `}>
+      <div className={`relative no-border grid  `}>
         <FaFilter className="absolute left-3 top-1/2 transform -translate-y-1/2" />
         <select
           id='select'
           onChange={handleThemeChange}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseDown}
-          className={` pl-10 pr-3 py-2 cursor-pointer rounded-md ${
-            isDarkMode ? 'bg-gray-800' : 'bg-white text-black'
+          className={` pl-10  cursor-pointer rounded-md ${
+            isDarkMode ? 'bg-gray-700 text-black ' : 'bg-white text-black'
           }`}
         >
           {arrayTheme.map((item, index) => (

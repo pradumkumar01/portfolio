@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../Theme/ThemeContext";
-import { getText, getThemeClassNames } from "../Themes";
+import { getComponent, getText, getThemeClassNames } from "../Themes";
 
 const MyProjects = () => {
   const project = [
@@ -35,7 +35,7 @@ const MyProjects = () => {
 
   return (
     <div className="mt-5">
-      <div className={`${isDarkMode ? 'bg-gray-600' : 'bg-zinc-300'}  py-5 rounded-md shadow-lg shadow-black`}>
+      <div className={`${getComponent(isDarkMode)}  py-5 rounded-md shadow-lg shadow-black`}>
         <h1 className={`${getText(isDarkMode)} text-xl font-semibold ml-5 p-5`}>
           My Projects
         </h1>
@@ -44,11 +44,11 @@ const MyProjects = () => {
             return (
               <div
                 key={index}
-                className={`${getThemeClassNames(isDarkMode)} px-5 py-5 rounded-md h-90 shadow-md shadow-slate-700 `}
+                className={`${getThemeClassNames(isDarkMode)} px-5 py-5 rounded-md h-90 shadow-md shadow-slate-800 `}
               >
                 <a href="https://example.com/">
                 <div className="flex flex-col justify-center items-center">
-                  <h1 className="text-zinc-600 font-semibold text-lg my-2">
+                  <h1 className={`${isDarkMode? 'text-zinc-300': 'text-zinc-500' } font-semibold text-lg my-2`}>
                     {item.title}
                   </h1>
                   <img
@@ -58,7 +58,7 @@ const MyProjects = () => {
                   />
                 </div>
                 <div className="">
-                  <p className="text-zinc-500 text-justify px-6 py-5 text-sm">
+                  <p className={`${isDarkMode? 'text-zinc-300': 'text-zinc-500' } text-justify px-6 py-5 text-sm`}>
                   {item.des}
                   </p>
                 </div>
