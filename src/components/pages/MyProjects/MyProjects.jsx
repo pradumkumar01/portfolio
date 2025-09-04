@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../Theme/ThemeContext";
 import { getComponent, getText, getThemeClassNames } from "../Themes";
+import hotstar from "../../../assets/hotstar.png"
+import bms from "../../../assets/bms.png"
+import dashboard from "../../../assets/dashboard.png"
+import todo from "../../../assets/todo.png"
 
 const MyProjects = () => {
   const project = [
@@ -11,22 +15,22 @@ const MyProjects = () => {
     // },
     {
       "title": "Hotstar Clone Layout",
-      "img": "src/assets/hotstar.png",
+      "img": hotstar,
       "des": "This project is a replica of the popular streaming platform Hotstar, designed to showcase skills in building modern web applications with seamless user experiences. The platform allows users to browse and stream movies, TV shows, and live events with features like search, categories, and user authentication."
     },
     {
       "title": "Bank Management System",
-      "img": "src/assets/bms.png",
+      "img": bms,
       "des": "This project is a comprehensive Bank Management System developed in C. It includes features such as account creation, balance inquiry, deposit, withdrawal, and account management. The system ensures data integrity and security, providing a reliable solution for managing banking operations efficiently."
     },
     {
       "title": "Dashboard",
-      "img": "src/assets/dashboard.png",
+      "img": dashboard,
       "des": "This project is a versatile dashboard application built using Flutter for both web and mobile platforms. It features a responsive design, real-time data visualization, and interactive components. The dashboard allows users to monitor key metrics, generate reports, and customize their view for better data analysis and decision-making."
     },
     {
       "title": "Todo App",
-      "img": "src/assets/todo.png",
+      "img": todo,
       "des": "This project is a full-stack Todo application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to create, read, update, and delete tasks. The application features user authentication, real-time updates, and a responsive design, providing a seamless task management experience."
     },
   ];
