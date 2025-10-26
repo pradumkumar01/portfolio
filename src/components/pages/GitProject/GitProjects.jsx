@@ -6,6 +6,22 @@ import { BiGitRepoForked } from "react-icons/bi";
 
 const gitProject = [
   { 
+    'title' : 'niramaya homeopathy app',
+    'description': 'Niramaya Homeopathy to facilitate patient-doctor interaction and holistic treatment access',
+    'fork': 0,
+    'branch': 0,
+    'language': 'Flutter',
+    'background': 'bg-green-500'
+  },
+  { 
+    'title' : 'tic_tac_toe_app',
+    'description': 'A simple Tic Tac Toe game built with Flutter and sqflite for local storage.',
+    'fork': 0,
+    'branch': 0,
+    'language': 'Flutter',
+    'background': 'bg-green-500'
+  },
+  { 
     'title' : 'shopwithus',
     'description': 'An e-commerce platform built with the MERN stack.',
     'fork': 0,
@@ -19,7 +35,7 @@ const gitProject = [
     'fork': 0,
     'branch': 0,
     'language': 'React',
-    'background': 'bg-green-500'
+    'background': 'bg-purple-500'
   },
   { 
     'title' : 'weatherApp',

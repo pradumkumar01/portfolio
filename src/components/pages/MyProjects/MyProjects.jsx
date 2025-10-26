@@ -5,33 +5,40 @@ import hotstar from "../../../assets/hotstar.png"
 import bms from "../../../assets/bms.png"
 import dashboard from "../../../assets/dashboard.png"
 import todo from "../../../assets/todo.png"
+import tic from "../../../assets/tic.png"
 
 const MyProjects = () => {
   const project = [
-    // {
-    //   "title": "Shop with Us",
-    //   "img": "src/assets/shop.png",
-    //   "des": "This project is a fully functional e-commerce platform designed to provide users with a seamless shopping experience. It allows users to browse products, view detailed descriptions, add items to the cart, and make secure payments. The platform is responsive, ensuring compatibility across devices"
-    // },
     {
-      "title": "Hotstar Clone Layout",
-      "img": hotstar,
-      "des": "This project is a replica of the popular streaming platform Hotstar, designed to showcase skills in building modern web applications with seamless user experiences. The platform allows users to browse and stream movies, TV shows, and live events with features like search, categories, and user authentication."
+      "title": "Niramaya Homoepathy App",
+      "img": "src/assets/niramya.png",
+      "des": "Niramaya Homeopathy to facilitate patient-doctor interaction and holistic treatment access. The app allows users to book appointments, access homeopathic remedies, and maintain health records, promoting wellness through natural healing methods. The user-friendly interface ensures easy navigation and a seamless experience for patients.",
+      "link": "https://play.google.com/store/apps/details?id=com.niramyahomeopathy.app&pcampaignid=web_share",
+
+    },
+    {
+      "title": "Tic Tac Toe App",
+      "img": tic,
+      "des": "This project is a simple Tic Tac Toe game built with Flutter and sqflite for local storage. It features a clean and intuitive user interface, allowing players to enjoy the classic game on their mobile devices. The app supports Leaderboard and performance views of the players compare with other players. The use of sqflite ensures that game progress can be saved and resumed later.",
+      "link": "https://github.com/pradumkumar01/tic_tac_toe_app",
     },
     {
       "title": "Bank Management System",
       "img": bms,
-      "des": "This project is a comprehensive Bank Management System developed in C. It includes features such as account creation, balance inquiry, deposit, withdrawal, and account management. The system ensures data integrity and security, providing a reliable solution for managing banking operations efficiently."
+      "des": "This project is a comprehensive Bank Management System developed in C. It includes features such as account creation, balance inquiry, deposit, withdrawal, and account management. The system ensures data integrity and security, providing a reliable solution for managing banking operations efficiently.",
+      "link": "https://github.com/pradumkumar01/Bank-Managment-System-"
     },
     {
       "title": "Dashboard",
       "img": dashboard,
-      "des": "This project is a versatile dashboard application built using Flutter for both web and mobile platforms. It features a responsive design, real-time data visualization, and interactive components. The dashboard allows users to monitor key metrics, generate reports, and customize their view for better data analysis and decision-making."
+      "des": "This project is a versatile dashboard application built using Flutter for both web and mobile platforms. It features a responsive design, real-time data visualization, and interactive components. The dashboard allows users to monitor key metrics, generate reports, and customize their view for better data analysis and decision-making.",
+      "link": "https://github.com/pradumkumar01/dashboard",
     },
     {
       "title": "Todo App",
       "img": todo,
-      "des": "This project is a full-stack Todo application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to create, read, update, and delete tasks. The application features user authentication, real-time updates, and a responsive design, providing a seamless task management experience."
+      "des": "This project is a full-stack Todo application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to create, read, update, and delete tasks. The application features user authentication, real-time updates, and a responsive design, providing a seamless task management experience.",
+      "link": "https://github.com/pradumkumar01/todo-app",
     },
   ];
 
@@ -50,7 +57,7 @@ const MyProjects = () => {
                 key={index}
                 className={`${getThemeClassNames(isDarkMode)} px-5 py-5 rounded-md h-90 shadow-md shadow-slate-800 `}
               >
-                <a href="https://example.com/">
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <div className="flex flex-col justify-center items-center">
                   <h1 className={`${isDarkMode? 'text-zinc-300': 'text-zinc-500' } font-semibold text-lg my-2`}>
                     {item.title}

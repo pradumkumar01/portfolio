@@ -9,18 +9,29 @@ const Experience = () => {
    time : 'July 2024 - September 2024',
    position: 'Flutter Trainee',
 company : 'SPI Pvt Ltd'
-  },  {
-    time : '1 September 2024 - 30 September 2024',
-    position: 'MERN Stack Developer Intern',
- company : 'Nezuware'
-   }
+  },  
+    {
+   time : 'March 2025 - June 2025',
+   position: 'App Developer Intern',
+company : 'DigiQuest Consultancy Services Private Limited'
+  },  
+    {
+   time : 'July 2025 - Current',
+   position: 'Flutter Developer',
+company : 'BrniX Media'
+  },
+//     {
+//     time : '1 September 2024 - 30 September 2024',
+//     position: 'MERN Stack Developer Intern',
+//  company : 'Nezuware'
+//    }
 ]
 const {isDarkMode} =  useContext(ThemeContext);
 
 
   return (
     <div className="mt-5">
-      <div className={` ${getComponent(isDarkMode)}bg-white h-56 p-4 rounded-md shadow-lg shadow-black`}>
+      <div className={` ${getComponent(isDarkMode)}bg-white  p-4 rounded-md shadow-lg shadow-black`}>
         <div className="ml-1">
         <div>
           <h1 className={`text-xl ml-2 font-semibold ${isDarkMode ? 'text-zinc-200' : 'text-zinc-500'} `}>Experience</h1>
