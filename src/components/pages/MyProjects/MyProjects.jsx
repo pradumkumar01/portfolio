@@ -6,12 +6,13 @@ import bms from "../../../assets/bms.png"
 import dashboard from "../../../assets/dashboard.png"
 import todo from "../../../assets/todo.png"
 import tic from "../../../assets/tic.png"
+import niramya from "../../../assets/niramya.png"
 
 const MyProjects = () => {
   const project = [
     {
       "title": "Niramaya Homoepathy App",
-      "img": "src/assets/niramya.png",
+      "img": niramya,
       "des": "Niramaya Homeopathy to facilitate patient-doctor interaction and holistic treatment access. The app allows users to book appointments, access homeopathic remedies, and maintain health records, promoting wellness through natural healing methods. The user-friendly interface ensures easy navigation and a seamless experience for patients.",
       "link": "https://play.google.com/store/apps/details?id=com.niramyahomeopathy.app&pcampaignid=web_share",
 
