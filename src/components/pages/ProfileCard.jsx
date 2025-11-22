@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { getComponent } from "./Themes";
 import { ThemeContext } from "../Theme/ThemeContext";
+import cv from "/cv.pdf";
 
 const ProfileCard = () => {
 
@@ -24,13 +25,14 @@ const ProfileCard = () => {
             </p>
           </div>
           <div>
-            <a 
-              href="/cv.pdf" download
-            >
-              <button className={`py-2 px-3 rounded-sm border ${isDarkMode ? 'border-blue-500':'border-slate-400'}  text-slate-400 text-sm shadow-md shadow-slate-700`}>
-                Download Resume
-              </button>
-            </a>
+           <a href={cv} download>
+  <button className={`py-2 px-3 rounded-sm border ${
+    isDarkMode ? 'border-blue-500' : 'border-slate-400'
+  } text-slate-400 text-sm shadow-md shadow-slate-700`}>
+    Download Resume
+  </button>
+</a>
+
           </div>
         </div>
       </div>
