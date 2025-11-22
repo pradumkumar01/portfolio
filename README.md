@@ -29,3 +29,8 @@ This is the portfolio of Pradum Kumar.
 - [LinkedIn](https://www.linkedin.com/in/pradum-kumar-160538247/)
 - [Github](https://github.com/pradumkumar01/)
 
+## Deployment 
+
+- npm run build 
+- netlify deploy --prod
+
