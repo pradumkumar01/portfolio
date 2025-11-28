@@ -57,7 +57,7 @@ const HomePage = () => {
         {/* </div> */}
         <div className="mt-5  flex justify-center items-center ">
           <div className="mb-5">
-            <a href="https://github.com/amresh-ui/portfolio">
+            <a href="https://github.com/pradumkumar01">
               <h1 className={`px-3 py-3 shadow-lg shadow-black ${isDarkMode === true ? 'bg-gray-600 text-yellow-300' : 'bg-zinc-300'}  rounded-md`}>Made By Pradum Kumar <span className="animate-ping ">❤️</span></h1>
             </a>
           </div>
