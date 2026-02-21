@@ -16,15 +16,15 @@ company : 'SPI Pvt Ltd'
 company : 'DigiQuest Consultancy Services Private Limited'
   },  
     {
-   time : 'July 2025 - Current',
-   position: 'Flutter Developer',
+   time : 'July 2025 - December 2025',
+   position: 'Junior Software Associate  ',
 company : 'BrniX Media'
   },
-//     {
-//     time : '1 September 2024 - 30 September 2024',
-//     position: 'MERN Stack Developer Intern',
-//  company : 'Nezuware'
-//    }
+    {
+    time : 'January 2026 - Current',
+    position: 'Flutter Developer',
+ company : 'BringOn Digital '
+   }
 ]
 const {isDarkMode} =  useContext(ThemeContext);
 
